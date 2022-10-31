@@ -58,8 +58,8 @@ void ledAlerter()
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     int size = 2; //sizeof(alerters);/// sizeof(alerters[0]);
-    (alerters[0])();
-    (alerters[1])();
+    // (alerters[0])();
+    // (alerters[1])();
     if (maxThreshold > computedStats.max )
     {
         for (int i = 0; i < size; i++)
