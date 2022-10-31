@@ -46,11 +46,11 @@ int ledAlertCallCount = 0;
 // sending the mail alert if max is greater than threshold
 void emailAlerter()
 {
-    // TBD later
+    emailAlertCallCount++;
 }
 
 // providing the LED alert if max is greater than threshold
 void ledAlerter()
 {
-    // TBD later
+    ledAlertCallCount++;
 }
