@@ -63,8 +63,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
     {
         for (int i = 0; i < size; i++)
         {
-            (*alerters)();
-            alerters++;
+            (alerters[i])();
+            // alerters++;
         }
         
     }
