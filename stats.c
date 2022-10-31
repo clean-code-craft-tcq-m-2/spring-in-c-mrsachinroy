@@ -46,13 +46,13 @@ int ledAlertCallCount = 0;
 // sending the mail alert if max is greater than threshold
 void emailAlerter()
 {
-    emailAlertCallCount++;
+    emailAlertCallCount = 1;
 }
 
 // providing the LED alert if max is greater than threshold
 void ledAlerter()
 {
-    ledAlertCallCount++;
+    ledAlertCallCount = 1
 }
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
