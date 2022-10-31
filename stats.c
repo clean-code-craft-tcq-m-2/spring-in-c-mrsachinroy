@@ -5,7 +5,7 @@
 struct Stats compute_statistics(const float *numberset, int setlength)
 {
     struct Stats s;
-    float sum;
+    float sum = 0;
     // int NoOfElement =
     if ((numberset == 0) || (setlength == 0))
     {
